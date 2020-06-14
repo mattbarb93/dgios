@@ -143,4 +143,10 @@
     text-align: center;
   }
 }
+.gallery {
+  .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
   

@@ -140,6 +140,10 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+
 .hamburger-menu {
   width: 40px;
   height: 40px;
