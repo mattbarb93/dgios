@@ -1,0 +1,20 @@
+{
+  "name": "dgios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -o css scss -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattbarb93/dgios.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mattbarb93/dgios/issues"
+  },
+  "homepage": "https://github.com/mattbarb93/dgios#readme"
+}
