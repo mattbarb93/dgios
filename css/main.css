@@ -80,19 +80,19 @@ body {
       .navbar-navigation-right .nav-list-item {
         list-style: none; }
       .navbar-navigation-right .nav-list-link {
-        font-family: "Dancing Script", cursive;
+        font-family: "Roboto", sans-serif;
         font-size: 50px;
         font-weight: 300;
         letter-spacing: 2px;
         text-transform: capitalize;
-        color: #bbb;
+        color: #dc3535;
         text-decoration: none;
         display: block;
         margin: 20px;
         text-align: center;
         transition: all 0.5s; }
         .navbar-navigation-right .nav-list-link:hover {
-          color: #d3ab55;
+          color: #25872d;
           letter-spacing: 4px; }
         @media (max-width: 600px) {
           .navbar-navigation-right .nav-list-link {
@@ -168,7 +168,7 @@ body {
     .hamburger-menu .menu-line {
       width: 100%;
       height: 4px;
-      background-color: #d3ab55;
+      background-color: #25872d;
       transform-origin: right;
       transition: all 0.5s 0.5s; }
       @media (max-width: 800px) {
@@ -180,10 +180,10 @@ body {
 
 .logo {
   font-size: 70px;
-  color: #d3ab55;
+  color: #25872d;
   width: 110px;
   height: 110px;
-  border: 3px solid #d3ab55;
+  border: 3px solid #25872d;
   border-radius: 50%;
   margin-right: 20px;
   display: flex;
@@ -203,9 +203,9 @@ body {
       border-width: 2px; } }
 
 .main-name {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
-  color: #bbb;
+  color: #dc3535;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
@@ -218,9 +218,9 @@ body {
       text-align: center; } }
 
 .sub-name {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  color: #bbb;
+  color: #dc3535;
   text-align: center;
   font-weight: 300;
   letter-spacing: 2px;
@@ -230,10 +230,10 @@ body {
       font-size: 12px; } }
 
 .main-heading {
-  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 100px;
   font-weight: 300;
-  color: #d3ab55;
+  color: #25872d;
   margin-bottom: 40px; }
   @media (max-width: 1600px) {
     .main-heading {
@@ -247,10 +247,10 @@ body {
       margin-bottom: 20px; } }
 
 .sub-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 60px;
   font-weight: 300;
-  color: #bbb;
+  color: #dc3535;
   margin-bottom: 80px;
   text-align: center; }
   @media (max-width: 1600px) {
@@ -272,13 +272,13 @@ body {
 .main-btn {
   width: 170px;
   height: 45px;
-  font-family: "Dancing Script", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #d3ab55;
+  color: #25872d;
   background-color: transparent;
-  border: 1px solid #d3ab55;
+  border: 1px solid #25872d;
   outline: none;
   cursor: pointer;
   transition: all 0.4s; }
@@ -293,7 +293,7 @@ body {
       height: 30px;
       font-size: 10px; } }
   .main-btn:hover {
-    background-color: #d3ab55;
+    background-color: #25872d;
     color: #262626; }
 
 .card {
@@ -307,7 +307,7 @@ body {
     position: absolute;
     top: 0;
     left: -100%;
-    background-color: rgba(211, 171, 85, 0.6);
+    background-color: rgba(37, 135, 45, 0.6);
     color: #fff;
     z-index: 10;
     display: flex;
@@ -316,7 +316,7 @@ body {
     flex-direction: column;
     transition: left 0.7s; }
     .card-overlay-heading {
-      font-family: "Nunito", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 50px;
       font-weight: 300;
       letter-spacing: 2px;
@@ -331,7 +331,7 @@ body {
         .card-overlay-heading {
           display: none; } }
     .card-overlay-paragraph {
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Roboto", sans-serif;
       font-size: 30px;
       margin-bottom: 30px;
       font-weight: 300;
@@ -349,14 +349,14 @@ body {
     .card-overlay-btn {
       width: 150px;
       height: 40px;
-      color: #d3ab55;
+      color: #25872d;
       background-color: #color-white;
       font-family: "Josefin Sans", sans-serif;
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
-      border: 1px solid #d3ab55;
+      border: 1px solid #25872d;
       outline: none;
       cursor: pointer; }
       @media (max-width: 900px) {
