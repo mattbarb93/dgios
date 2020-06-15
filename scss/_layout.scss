@@ -149,4 +149,11 @@
     flex-wrap: wrap;
   }
 }
+
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
   

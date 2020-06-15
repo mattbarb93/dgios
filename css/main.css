@@ -144,6 +144,12 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
 .hamburger-menu {
   width: 40px;
   height: 40px;
@@ -233,7 +239,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 100px;
   font-weight: 300;
-  color: #25872d;
+  color: #fff;
   margin-bottom: 40px; }
   @media (max-width: 1600px) {
     .main-heading {
@@ -276,12 +282,23 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #25872d;
   background-color: transparent;
-  border: 1px solid #25872d;
   outline: none;
   cursor: pointer;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  font-weight: 700; }
+  .main-btn-green {
+    color: #25872d;
+    border: 1px solid #25872d; }
+    .main-btn-green:hover {
+      background-color: #25872d;
+      color: #262626; }
+  .main-btn-red {
+    color: #dc3535;
+    border: 1px solid #dc3535; }
+    .main-btn-red:hover {
+      background-color: #dc3535;
+      color: #262626; }
   @media (max-width: 800px) {
     .main-btn {
       width: 150px;
@@ -292,9 +309,6 @@ body {
       width: 130px;
       height: 30px;
       font-size: 10px; } }
-  .main-btn:hover {
-    background-color: #25872d;
-    color: #262626; }
 
 .card {
   width: 33.3333%;
@@ -372,3 +386,10 @@ body {
   .card-img {
     object-fit: cover;
     opacity: 0.5; }
+
+.gallery-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center; }
