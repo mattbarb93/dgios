@@ -150,10 +150,22 @@
   }
 }
 
-.gallery{
+.contact{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+.footer{
+  font-family: $font-roboto;
+  height: 20vh;
+  background-color: $color-black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
   

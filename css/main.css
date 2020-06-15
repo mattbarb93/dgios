@@ -144,11 +144,21 @@ body {
   display: flex;
   flex-wrap: wrap; }
 
-.gallery {
+.contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 10vh; }
+
+.footer {
+  font-family: "Roboto", sans-serif;
+  height: 20vh;
+  background-color: #000001;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .hamburger-menu {
   width: 40px;
@@ -364,7 +374,7 @@ body {
       width: 150px;
       height: 40px;
       color: #25872d;
-      background-color: #color-white;
+      background-color: #fff;
       font-family: "Josefin Sans", sans-serif;
       font-size: 14px;
       font-weight: bold;
