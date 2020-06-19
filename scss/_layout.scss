@@ -109,17 +109,17 @@
     right: 0;
   }
   
-  .checkbox:checked ~ .hamburger-menu .menu {
+  .checkbox:checked ~ .hamburger-bg .hamburger-menu .menu {
     transform: rotateZ(90deg);
   }
   
-  .checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  .checkbox:checked ~ .hamburger-bg .hamburger-menu .menu-line-1 {
     transform: rotateZ(-40deg);
   }
-  .checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  .checkbox:checked ~ .hamburger-bg .hamburger-menu .menu-line-2 {
     opacity: 0;
   }
-  .checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  .checkbox:checked ~ .hamburger-bg .hamburger-menu .menu-line-3 {
     transform: rotateZ(40deg);
   }
 

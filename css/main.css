@@ -105,16 +105,16 @@ body {
 .checkbox:checked ~ .navbar-navigation .navbar-navigation-right {
   right: 0; }
 
-.checkbox:checked ~ .hamburger-menu .menu {
+.checkbox:checked ~ .hamburger-bg .hamburger-menu .menu {
   transform: rotateZ(90deg); }
 
-.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+.checkbox:checked ~ .hamburger-bg .hamburger-menu .menu-line-1 {
   transform: rotateZ(-40deg); }
 
-.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+.checkbox:checked ~ .hamburger-bg .hamburger-menu .menu-line-2 {
   opacity: 0; }
 
-.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+.checkbox:checked ~ .hamburger-bg .hamburger-menu .menu-line-3 {
   transform: rotateZ(40deg); }
 
 .header {
@@ -160,6 +160,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.hamburger-bg {
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 7.6%;
+  right: 3.8%;
+  border-radius: 50%;
+  z-index: 1; }
 
 .hamburger-menu {
   width: 40px;

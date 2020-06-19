@@ -1,3 +1,14 @@
+.hamburger-bg{
+    background-color: $color-white;
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: 7.6%;
+        right: 3.8%;
+        border-radius: 50%;
+        z-index: 1;
+}
+
 .hamburger-menu {
     width: 40px;
     height: 40px;
