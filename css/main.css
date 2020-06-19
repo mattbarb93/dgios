@@ -16,7 +16,8 @@ body {
   min-width: 100%;
   min-height: 100%;
   height: auto;
-  opacity: 0.3; }
+  opacity: 0.3;
+  filter: blur(4px); }
 
 .navbar {
   position: relative;
@@ -219,9 +220,9 @@ body {
       border-width: 2px; } }
 
 .main-name {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
-  color: #dc3535;
+  color: #fff;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase; }
@@ -234,9 +235,9 @@ body {
       text-align: center; } }
 
 .sub-name {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  color: #dc3535;
+  color: #fff;
   text-align: center;
   font-weight: 300;
   letter-spacing: 2px;
@@ -246,7 +247,7 @@ body {
       font-size: 12px; } }
 
 .main-heading {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 100px;
   font-weight: 300;
   color: #fff;
@@ -375,7 +376,7 @@ body {
       height: 40px;
       color: #25872d;
       background-color: #fff;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
