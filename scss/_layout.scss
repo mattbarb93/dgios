@@ -144,6 +144,54 @@
     text-align: center;
   }
 }
+
+.specialty{
+  height: 100vh;
+  background-color: $color-light-grey;
+  font-family: $font-montserrat;
+  text-align: center;
+
+  &-title{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: $color-secondary;
+  }
+
+  &-subtitle{
+    font-size: 2rem;
+    color: $color-secondary;
+  }
+
+  &-categories{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem 2rem;
+  }
+
+  &-category{
+
+    &-image{
+      object-fit: cover;
+      height: 50vh;
+      width: 50vh;
+      border-radius: 50%;
+    }
+
+    &-title{
+      font-size: 2rem;
+      font-family: $font-roboto;
+    }
+
+
+  }
+}
+
+.category-1{
+  grid-column: 1 / 2;
+
+}
+
 .gallery {
   .cards-wrapper {
     display: flex;

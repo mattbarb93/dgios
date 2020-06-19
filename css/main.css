@@ -142,6 +142,35 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.specialty {
+  height: 100vh;
+  background-color: #cacaca;
+  font-family: "Montserrat", sans-serif;
+  text-align: center; }
+  .specialty-title {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+    color: #dc3535; }
+  .specialty-subtitle {
+    font-size: 2rem;
+    color: #dc3535; }
+  .specialty-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem 2rem; }
+  .specialty-category-image {
+    object-fit: cover;
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%; }
+  .specialty-category-title {
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif; }
+
+.category-1 {
+  grid-column: 1 / 2; }
+
 .gallery .cards-wrapper {
   display: flex;
   flex-wrap: wrap; }
