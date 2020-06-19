@@ -69,7 +69,7 @@
   
   .main-name {
     font-family: $font-montserrat;
-    font-size: 50px;
+    font-size: 3rem;
     color: $color-white;
     @include textStyles;
   
@@ -85,9 +85,10 @@
   
   .sub-name {
     font-family: $font-montserrat;
-    font-size: 18px;
+    font-size: 1.6rem;
     color: $color-white;
     text-align: center;
+    margin-bottom: 2rem;
     @include textStyles;
   
     @media (max-width: 500px) {
@@ -97,21 +98,21 @@
   
   .main-heading {
     font-family: $font-montserrat;
-    font-size: 100px;
+    font-size: 5.5rem;
     font-weight: 300;
     color: $color-white;
     margin-bottom: 40px;
   
     @media (max-width: 1600px) {
-      font-size: 80px;
+      font-size: 5rem;
     }
   
     @media (max-width: 1000px) {
-      font-size: 60px;
+      font-size: 3rem;
     }
   
     @media (max-width: 500px) {
-      font-size: 40px;
+      font-size: 2rem;
       margin-bottom: 20px;
     }
   
@@ -147,12 +148,17 @@
     }
   }
   
+  //Change that class name, too similar to main-btn`
+  .main-buttons{
+    display: flex;
+    justify-content: space-around;
+  }
   
   .main-btn {
-    width: 170px;
-    height: 45px;
-    font-family: $font-roboto;
-    font-size: 14px;
+    width: 17rem;
+    height: 4.5rem;
+    font-family: $font-montserrat;
+    font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     background-color: transparent;
@@ -160,24 +166,29 @@
     cursor: pointer;
     transition: all 0.4s;
     font-weight: 700;
+    
 
     &-green{
-        color: $color-primary;
-        border: 1px solid $color-primary;
+        color: $color-white;
+        border: 1px solid $color-white;
+        background-color: $color-primary;
 
         &:hover {
-            background-color: $color-primary;
+            background-color: $color-white;
             color: $color-dark;
+            border: 1px solid $color-primary;
           }
     }
 
     &-red{
-        color: $color-secondary;
-        border: 1px solid $color-secondary;
+        color: $color-white;
+        background-color: $color-secondary;
+        border: 1px solid $color-white;
 
         &:hover {
-            background-color: $color-secondary;
-            color: $color-dark;
+            border: 1px solid $color-secondary;
+            background-color: $color-white;
+            color: $color-secondary;
           }
     }
   
