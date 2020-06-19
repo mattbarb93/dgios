@@ -111,6 +111,7 @@
   
   .checkbox:checked ~ .hamburger-bg .hamburger-menu .menu {
     transform: rotateZ(90deg);
+    margin-top: -0.2rem;
   }
   
   .checkbox:checked ~ .hamburger-bg .hamburger-menu .menu-line-1 {
