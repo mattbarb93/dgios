@@ -146,27 +146,38 @@ body {
   height: 100vh;
   background-color: #cacaca;
   font-family: "Montserrat", sans-serif;
-  text-align: center; }
+  text-align: center;
+  padding: 2rem; }
   .specialty-title {
     margin-bottom: 2rem;
-    margin-top: 2rem;
     font-size: 4rem;
     color: #dc3535; }
   .specialty-subtitle {
     font-size: 2rem;
+    margin-bottom: 2rem;
     color: #dc3535; }
   .specialty-categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem 2rem; }
-  .specialty-category-image {
-    object-fit: cover;
-    height: 50vh;
-    width: 50vh;
-    border-radius: 50%; }
-  .specialty-category-title {
-    font-size: 2rem;
-    font-family: "Roboto", sans-serif; }
+  .specialty-category {
+    color: #262626;
+    font-family: "Montserrat", sans-serif; }
+    .specialty-category-image {
+      margin: 1rem;
+      object-fit: cover;
+      height: 50vh;
+      width: 50vh;
+      border-radius: 50%;
+      -webkit-box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75); }
+    .specialty-category-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #000001; }
+    .specialty-category-description {
+      font-size: 1rem; }
 
 .category-1 {
   grid-column: 1 / 2; }
