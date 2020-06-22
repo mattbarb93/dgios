@@ -311,7 +311,6 @@
   .gallery{
 
     &-title{
-      
       font-size: 4rem;
       text-align: center;
       margin-bottom: 2rem;
@@ -323,5 +322,19 @@
       text-align: center;
     }
     
+  }
+
+  .contact{
+    &-title{
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    &-subtitle{
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
   }
   

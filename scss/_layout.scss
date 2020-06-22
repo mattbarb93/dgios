@@ -220,9 +220,9 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  background-color: $color-white;
-  color: $color-secondary;
+  background: $color-primary;
+background: linear-gradient(0deg, $color-primary, $color-light-grey 100%);
+  color: $color-white;
 }
 
 .footer {
