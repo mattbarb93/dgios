@@ -182,16 +182,25 @@ body {
 .category-1 {
   grid-column: 1 / 2; }
 
-.gallery .cards-wrapper {
-  display: flex;
-  flex-wrap: wrap; }
+.gallery {
+  height: 100vh;
+  padding: 2rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif; }
+  .gallery .cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
 
 .contact {
+  font-family: "Montserrat", sans-serif;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 10vh; }
+  background-color: #fff;
+  color: #dc3535; }
 
 .footer {
   font-family: "Roboto", sans-serif;
@@ -382,8 +391,8 @@ body {
       font-size: 10px; } }
 
 .card {
-  width: 33.3333%;
-  height: 20vw;
+  width: 30%;
+  height: 15vw;
   position: relative;
   overflow: hidden; }
   .card:hover .card-overlay {
@@ -459,8 +468,11 @@ body {
     opacity: 0.5; }
 
 .gallery-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 6rem;
-  font-weight: 300;
-  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem; }
+
+.gallery-subtitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
   text-align: center; }
