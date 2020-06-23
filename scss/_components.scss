@@ -1,322 +1,365 @@
 .hamburger-menu {
-    width: 6rem;
-    height: 6rem;
-    position: fixed;
-    top: 10%;
-    right: 5%;
-    z-index: 300;
-    background-color: white;
-    border-radius: 50%;
-  
-    .menu {
-      @extend %fullSpace;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      cursor: pointer;
-      transition: transform 0.5s;
-  
-      &-line {
-        width: 50%;
-        height: 4px;
-        background-color: $color-primary;
-        transform-origin: right;
-        transition: all 0.5s 0.5s;
-  
-        @media (max-width: 800px) {
-          height: 3px;
-        }
-  
-        @media (max-width: 500px) {
-          height: 2px;
-        }
+  width: 6rem;
+  height: 6rem;
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  z-index: 300;
+  background-color: white;
+  border-radius: 50%;
+
+  .menu {
+    @extend %fullSpace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &-line {
+      width: 50%;
+      height: 4px;
+      background-color: $color-primary;
+      transform-origin: right;
+      transition: all 0.5s 0.5s;
+
+      @media (max-width: 800px) {
+        height: 3px;
+      }
+
+      @media (max-width: 500px) {
+        height: 2px;
       }
     }
   }
-  
-  .logo {
-    font-size: 70px;
-    color: $color-primary;
-    width: 110px;
-    height: 110px;
-    border: 3px solid $color-primary;
-    border-radius: 50%;
-    margin-right: 20px;
-    @include flexLayout;
-    text-decoration: none;
-  
-    @media (max-width: 1000px) {
-      font-size: 50px;
-      width: 90px;
-      height: 90px;
-    }
-  
-    @media (max-width: 500px) {
-      width: 50px;
-      height: 50px;
-      font-size: 30px;
-      border-width: 2px;
-    }
+}
+
+.logo {
+  font-size: 70px;
+  color: $color-primary;
+  width: 110px;
+  height: 110px;
+  border: 3px solid $color-primary;
+  border-radius: 50%;
+  margin-right: 20px;
+  @include flexLayout;
+  text-decoration: none;
+
+  @media (max-width: 1000px) {
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
   }
-  
-  .main-name {
-    font-family: $font-montserrat;
+
+  @media (max-width: 500px) {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-width: 2px;
+  }
+}
+
+.main-name {
+  font-family: $font-montserrat;
+  font-size: 3rem;
+  color: $color-white;
+  @include textStyles;
+
+  @media (max-width: 1000px) {
+    font-size: 40px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.sub-name {
+  font-family: $font-montserrat;
+  font-size: 1.6rem;
+  color: $color-white;
+  text-align: center;
+  margin-bottom: 2rem;
+  @include textStyles;
+
+  @media (max-width: 500px) {
+    font-size: 12px;
+  }
+}
+
+.main-heading {
+  font-family: $font-montserrat;
+  font-size: 5.5rem;
+  font-weight: 300;
+  color: $color-white;
+  margin-bottom: 40px;
+
+  @media (max-width: 1600px) {
+    font-size: 5rem;
+  }
+
+  @media (max-width: 1000px) {
     font-size: 3rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.sub-heading {
+  font-family: $font-roboto;
+  font-size: 60px;
+  font-weight: 300;
+  color: $color-secondary;
+  margin-bottom: 80px;
+  text-align: center;
+
+  @media (max-width: 1600px) {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 1300px) {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 30px;
+    margin-bottom: 5rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+//Change that class name, too similar to main-btn`
+.main-buttons {
+  display: flex;
+  justify-content: space-around;
+
+  @media (max-width: 1000px) {
+    padding-top: 5rem;
+  }
+
+  a {
+    padding: 2rem;
+  }
+}
+
+.main-btn {
+  width: 17rem;
+  height: 4.5rem;
+  font-family: $font-montserrat;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s;
+  font-weight: 700;
+  border-radius: 2rem 2rem;
+
+  &-green {
     color: $color-white;
-    @include textStyles;
-  
-    @media (max-width: 1000px) {
-      font-size: 40px;
-    }
-  
-    @media (max-width: 500px) {
-     font-size: 20px;
-     text-align: center;
+    border: 1px solid $color-white;
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-dark;
+      border: 1px solid $color-primary;
     }
   }
-  
-  .sub-name {
-    font-family: $font-montserrat;
-    font-size: 1.6rem;
+
+  &-red {
     color: $color-white;
-    text-align: center;
-    margin-bottom: 2rem;
-    @include textStyles;
-  
-    @media (max-width: 500px) {
-      font-size: 12px;
-    }
-  }
-  
-  .main-heading {
-    font-family: $font-montserrat;
-    font-size: 5.5rem;
-    font-weight: 300;
-    color: $color-white;
-    margin-bottom: 40px;
-  
-    @media (max-width: 1600px) {
-      font-size: 5rem;
-    }
-  
-    @media (max-width: 1000px) {
-      font-size: 3rem;
-    }
-  
-    @media (max-width: 500px) {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-  
-    
-  }
-  
-  .sub-heading {
-    font-family: $font-roboto;
-    font-size: 60px;
-    font-weight: 300;
-    color: $color-secondary;
-    margin-bottom: 80px;
-    text-align: center;
-  
-    @media (max-width: 1600px) {
-      font-size: 50px;
-      margin-bottom: 50px;
-    }
-  
-    @media (max-width: 1300px) {
-      font-size: 40px;
-      margin-bottom: 30px;
-    }
-  
-    @media (max-width: 1000px) {
-      font-size: 30px;
-    }
-  
-    
-    @media (max-width: 500px) {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-  }
-  
-  //Change that class name, too similar to main-btn`
-  .main-buttons{
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .main-btn {
-    width: 17rem;
-    height: 4.5rem;
-    font-family: $font-montserrat;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: transparent;
-    outline: none;
-    cursor: pointer;
-    transition: all 0.4s;
-    font-weight: 700;
-    
+    background-color: $color-secondary;
+    border: 1px solid $color-white;
 
-    &-green{
-        color: $color-white;
-        border: 1px solid $color-white;
-        background-color: $color-primary;
-
-        &:hover {
-            background-color: $color-white;
-            color: $color-dark;
-            border: 1px solid $color-primary;
-          }
-    }
-
-    &-red{
-        color: $color-white;
-        background-color: $color-secondary;
-        border: 1px solid $color-white;
-
-        &:hover {
-            border: 1px solid $color-secondary;
-            background-color: $color-white;
-            color: $color-secondary;
-          }
-    }
-  
-    @media (max-width: 800px) {
-      width: 150px;
-      height: 35px;
-      font-size: 12px;
-    }
-    @media (max-width: 500px) {
-      width: 130px;
-      height: 30px;
-      font-size: 10px;
+    &:hover {
+      border: 1px solid $color-secondary;
+      background-color: $color-white;
+      color: $color-secondary;
     }
   }
-  
-  .card {
-    width: 30%;
-    height: 15vw;
+
+  @media (max-width: 1000px) {
+    width: 15rem;
+    height: 4rem;
+  }
+  @media (max-width: 500px) {
+    width: 130px;
+    height: 30px;
+    font-size: 10px;
+  }
+}
+
+.card {
+  width: 30%;
+  height: 15vw;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 1000px) {
+    width: 43%;
+    height: 30vw;
     position: relative;
     overflow: hidden;
-  
-    &:hover .card-overlay {
-      left: 0;
-    }
-  
-    &-overlay {
-      position: absolute;
-      top: 0;
-      left: -100%;
-      background-color: rgba($color-primary, 0.6);
-      color: $color-white;
-      z-index: 10;
-      @include flexLayout;
-      flex-direction: column;
-      @extend %fullSpace;
-      transition: left 0.7s;
-  
-      &-heading {
-        font-family: $font-roboto;
-        font-size: 50px;
-        @include textStyles(capitalize);
-  
-        @media (max-width: 900px) {
-          font-size: 35px;
-        }
-  
-        @media (max-width: 650px) {
-          font-size: 20px;
-        }
-        @media (max-width: 500px) {
-          display: none;
-        }
+  }
+
+  &:hover .card-overlay {
+    left: 0;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgba($color-primary, 0.6);
+    color: $color-white;
+    z-index: 10;
+    @include flexLayout;
+    flex-direction: column;
+    @extend %fullSpace;
+    transition: left 0.7s;
+
+    &-heading {
+      font-family: $font-roboto;
+      font-size: 50px;
+      @include textStyles(capitalize);
+
+      @media (max-width: 900px) {
+        font-size: 35px;
       }
-  
-      &-paragraph {
-        font-family: $font-roboto;
-        font-size: 30px;
-        margin-bottom: 30px;
-        @include textStyles(capitalize);
-  
-        @media (max-width: 900px) {
-          font-size: 20px;
-        }
-  
-        @media (max-width: 650px) {
-          font-size: 15px;
-        }
-  
-        @media (max-width: 500px) {
-          display: none;
-        }
+
+      @media (max-width: 650px) {
+        font-size: 20px;
       }
-  
-      &-btn {
-        width: 150px;
-        height: 40px;
-        color: $color-primary;
-        background-color: $color-white;
-        font-family: $font-montserrat;
-        font-size: 14px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border: 1px solid $color-primary;
-        outline: none;
-        cursor: pointer;
-  
-        @media (max-width: 900px) {
-          font-size: 12px;
-          width: 3rem;
-          height: 3rem;
-        }
-  
-        @media (max-width: 650px) {
-          font-size: 10px;
-          width: 100px;
-          height: 30px;
-        }
+      @media (max-width: 500px) {
+        display: none;
       }
     }
-  
-    &-img {
-      @extend %fullSpace;
-      object-fit: cover;
-      opacity: 0.5;
+
+    &-paragraph {
+      font-family: $font-roboto;
+      font-size: 30px;
+      margin-bottom: 30px;
+      @include textStyles(capitalize);
+
+      @media (max-width: 900px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 15px;
+      }
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+    }
+
+    &-btn {
+      width: 8rem;
+      height: 40px;
+      color: $color-primary;
+      background-color: $color-white;
+      font-family: $font-montserrat;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid $color-primary;
+      outline: none;
+      cursor: pointer;
+
+      @media (max-width: 900px) {
+        font-size: 12px;
+        width: 12rem;
+        height: 3rem;
+        border-radius: 2rem 2rem;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+      }
     }
   }
 
-  .gallery{
+  &-img {
+    @extend %fullSpace;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+}
 
-    &-title{
-      font-size: 4rem;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    &-subtitle{
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    
+.gallery {
+  &-title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
   }
 
-  .contact{
-    &-title{
-      font-size: 4rem;
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+  &-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
 
-    &-subtitle{
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      text-align: center;
+.contact {
+  &-title {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.footer{
+
+  &-title{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-partners{
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img{
+      fill: white;
     }
   }
+
   
+  
+  &-credits{
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
