@@ -236,9 +236,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: #25872d;
-  background: linear-gradient(0deg, #25872d, #cacaca 100%);
-  color: #fff; }
+  background-color: #cacaca;
+  color: #25872d; }
 
 .footer {
   font-family: "Roboto", sans-serif;
