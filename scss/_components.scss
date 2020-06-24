@@ -8,6 +8,11 @@
   background-color: white;
   border-radius: 50%;
 
+  @media (max-width: 800px){
+    width: 5rem;
+    height: 5rem;
+  }
+
   .menu {
     @extend %fullSpace;
     display: flex;
@@ -67,7 +72,7 @@
   @include textStyles;
 
   @media (max-width: 1000px) {
-    font-size: 40px;
+    font-size: 2rem;
   }
 
   @media (max-width: 500px) {
@@ -195,6 +200,14 @@
     width: 15rem;
     height: 4rem;
   }
+
+  @media (max-width: 700px) {
+    width: 12rem;
+    height: 3rem;
+    font-size: 1rem;
+  }
+
+
   @media (max-width: 500px) {
     width: 130px;
     height: 30px;
@@ -308,12 +321,22 @@
     font-size: 4rem;
     text-align: center;
     margin-bottom: 2rem;
+
+    @media (max-width: 1000px) {
+      font-size: 3rem;
+    }
+
+
   }
 
   &-subtitle {
     font-size: 2rem;
     margin-bottom: 2rem;
     text-align: center;
+
+    @media (max-width: 1000px) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -322,6 +345,28 @@
     font-size: 4rem;
     text-align: center;
     margin-bottom: 2rem;
+    height: 10%;
+
+    @media (max-width: 1000px) {
+      font-size: 3rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &-wrapper{
+    height: 50%;
+    margin: 0 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid $color-dark;
+    border-bottom: 2px solid $color-dark;
+
+    @media (max-width: 1000px) {
+      font-size: 3rem;
+      flex-direction: column;
+    }
+
   }
 
   &-subtitle {
@@ -329,39 +374,56 @@
     margin-bottom: 2rem;
     text-align: center;
   }
+
+  &-button{
+    text-align: center;
+  }
+
+  &-partners{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+  }
+
+  img{
+    max-width: 150px;
+  }
 }
 
 .footer{
 
   &-title{
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 
-  &-partners{
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
+ 
+
+  &-social-media{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-
-    &-partner{
-      filter: sepia(1);
+    justify-content: space-evenly;
+    width: 100%;
+    
+    a{
+      text-decoration: none;
+      font-size: 4rem;
     }
 
-    &-slice{
-      filter: invert(100);
+    &-facebook{
+      color: #3b5998;
     }
+
+    &-instagram{
+      color: #c32aa3;
+    }
+
   }
 
   
   
   &-credits{
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
     display: flex;
     justify-content: center;
     align-items: center;

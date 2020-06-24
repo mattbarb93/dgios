@@ -224,29 +224,27 @@ body {
   padding: 2rem;
   color: #fff;
   font-family: "Montserrat", sans-serif; }
+  @media (max-width: 1000px) {
+    .gallery {
+      height: 85vh; } }
   .gallery .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
 
 .contact {
+  padding: 1rem 0 1rem 0;
   font-family: "Montserrat", sans-serif;
-  height: 65vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  height: 80vh;
   background-color: #cacaca;
   color: #25872d; }
 
 .footer {
+  padding: 1rem;
   font-family: "Roboto", sans-serif;
-  height: 35vh;
+  height: 15vh;
   background-color: #262626;
-  color: white;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(3, 33.3%); }
+  color: white; }
 
 .hamburger-menu {
   width: 6rem;
@@ -257,6 +255,10 @@ body {
   z-index: 300;
   background-color: white;
   border-radius: 50%; }
+  @media (max-width: 800px) {
+    .hamburger-menu {
+      width: 5rem;
+      height: 5rem; } }
   .hamburger-menu .menu {
     display: flex;
     flex-direction: column;
@@ -310,7 +312,7 @@ body {
   text-transform: uppercase; }
   @media (max-width: 1000px) {
     .main-name {
-      font-size: 40px; } }
+      font-size: 2rem; } }
   @media (max-width: 500px) {
     .main-name {
       font-size: 20px;
@@ -412,6 +414,11 @@ body {
     .main-btn {
       width: 15rem;
       height: 4rem; } }
+  @media (max-width: 700px) {
+    .main-btn {
+      width: 12rem;
+      height: 3rem;
+      font-size: 1rem; } }
   @media (max-width: 500px) {
     .main-btn {
       width: 130px;
@@ -506,43 +513,74 @@ body {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 2rem; }
+  @media (max-width: 1000px) {
+    .gallery-title {
+      font-size: 3rem; } }
 
 .gallery-subtitle {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center; }
+  @media (max-width: 1000px) {
+    .gallery-subtitle {
+      font-size: 1.2rem; } }
 
 .contact-title {
   font-size: 4rem;
   text-align: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  height: 10%; }
+  @media (max-width: 1000px) {
+    .contact-title {
+      font-size: 3rem; } }
+
+.contact-wrapper {
+  height: 50%;
+  margin: 0 0 2rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid #262626;
+  border-bottom: 2px solid #262626; }
+  @media (max-width: 1000px) {
+    .contact-wrapper {
+      font-size: 3rem;
+      flex-direction: column; } }
 
 .contact-subtitle {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center; }
 
-.footer-title {
-  grid-column: 1 / -1;
-  grid-row: 1 / 2;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.contact-button {
+  text-align: center; }
 
-.footer-partners {
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
+.contact-partners {
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
-  .footer-partners-partner {
-    filter: sepia(1); }
-  .footer-partners-slice {
-    filter: invert(100); }
+  align-items: center;
+  width: 100%; }
+
+.contact img {
+  max-width: 150px; }
+
+.footer-title {
+  text-align: center; }
+
+.footer-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%; }
+  .footer-social-media a {
+    text-decoration: none;
+    font-size: 4rem; }
+  .footer-social-media-facebook {
+    color: #3b5998; }
+  .footer-social-media-instagram {
+    color: #c32aa3; }
 
 .footer-credits {
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
   display: flex;
   justify-content: center;
   align-items: center; }
