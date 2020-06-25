@@ -364,6 +364,10 @@
       font-size: 3rem;
       margin-bottom: 0;
     }
+
+    @media (max-width: 500px) {
+      font-size: 2.5rem;
+    }
   }
 
   &-wrapper{
@@ -374,21 +378,33 @@
     align-items: center;
     border-bottom: 2px solid $color-dark;
     border-top: 2px solid $color-dark;
-
-    @media (max-width: 1000px) {
-      font-size: 3rem;
+    
+    @media (max-width: 500px) {
+      font-size: 1.8rem;
       flex-direction: column;
+      justify-content: space-evenly;
     }
+
+   
 
   }
 
   &-subtitle {
     font-size: 2rem;
     text-align: center;
+
+    @media (max-width: 500px) {
+      font-size: 1.8rem;
+      flex-direction: column;
+    }
   }
 
   &-button{
     text-align: center;
+  }
+
+  &-hours{
+    color: $color-dark;
   }
 
   &-partners{
@@ -405,6 +421,10 @@
 
   img{
     max-width: 150px;
+    @media (max-width: 500px) {
+      max-width: 100px;
+    }
+    
   }
 }
 
@@ -430,6 +450,10 @@
     a{
       text-decoration: none;
       font-size: 4rem;
+
+      @media (max-width: 500px) {
+        font-size: 3rem;
+      }
     }
 
     &-facebook{
@@ -445,8 +469,10 @@
   
   
   &-credits{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+
+    @media (max-width: 500px) {
+      font-size: 1rem;
+    }
   }
 }
