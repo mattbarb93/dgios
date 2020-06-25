@@ -133,7 +133,7 @@ body {
       font-size: 3rem; } }
   @media (max-width: 1000px) {
     .header {
-      background-image: url(/images/cannoli-20.jpg); } }
+      background-image: url(images/cannoli-20.jpg); } }
   .header .brand {
     position: absolute;
     top: 15%;
@@ -673,5 +673,3 @@ body {
   @media (max-width: 500px) {
     .footer-credits {
       font-size: 1rem; } }
-
-      
