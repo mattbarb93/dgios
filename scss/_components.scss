@@ -14,8 +14,8 @@
   }
 
   @media (max-width: 400px){
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .menu {
@@ -81,7 +81,8 @@
   }
 
   @media (max-width: 500px) {
-    font-size: 20px;
+    font-size: 1rem;
+    font-size: 18px;
     text-align: center;
   }
 }
@@ -95,7 +96,7 @@
   @include textStyles;
 
   @media (max-width: 500px) {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -158,7 +159,8 @@
     padding-top: 5rem;
   }
 
-  @media (max-width: 400px){
+  @media (max-width: 500px){
+    padding-top: 1rem;
     flex-direction: column;
   }
 
@@ -229,11 +231,14 @@
     position: relative;
     overflow: hidden;
   }
-  @media (max-width: 500px) {
+  @media (max-height: 800px) {
     width: 40%;
     height: 45vw;
-    position: relative;
-    overflow: hidden;
+  }
+
+  @media (max-width: 400px){
+    width: 43%;
+    height: 30vw;
   }
 
   &:hover .card-overlay {
@@ -368,6 +373,10 @@
     @media (max-width: 500px) {
       font-size: 2.5rem;
     }
+
+    @media (max-width: 400px) {
+      font-size: 2rem;
+    }
   }
 
   &-wrapper{
@@ -415,6 +424,9 @@
 
     @media (max-width: 1000px){
       height: 30%;
+    }
+    @media (max-width: 400px){
+      height: 20%;
     }
 
   }

@@ -164,22 +164,28 @@
 }
 
 .specialty {
-  height: 120vh;
+  height: 100vh;
   background-color: $color-light-grey;
   font-family: $font-montserrat;
   text-align: center;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 1200px) {
-    height: 55vh;
+    height: 45vh;
   }
 
-  @media (max-width: 500px) {
+  @media (max-height: 800px) {
     height: 100vh;
   }
 
+  @media (max-width: 400px){
+    height: 130vh;
+  } 
+
   &-title {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 4rem;
     color: $color-secondary;
     height: 5%;
@@ -191,6 +197,9 @@
     @media (max-width: 500px) {
       margin-bottom: 1rem;
       font-size: 2.5rem;
+    }
+    @media (max-width: 400px) {
+      font-size: 2rem;
     }
   }
 
@@ -207,16 +216,24 @@
     @media (max-width: 500px) {
       font-size: 1.4rem;
     }
+
+    @media (max-width: 400px) {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
   }
 
   &-categories {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    height: 90%;
+    justify-content: center;
+    flex-direction: row;
     column-gap: 2rem 2rem;
 
     @media(max-width: 500px){
-      grid-template-columns: 100%;
-      grid-template-rows: repeat(3, 32%);
+      flex-direction: column;
+      justify-content: space-evenly;
+
     }
   }
 
