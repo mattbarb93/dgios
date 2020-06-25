@@ -13,6 +13,11 @@
     height: 5rem;
   }
 
+  @media (max-width: 400px){
+    width: 4rem;
+    height: 4rem;
+  }
+
   .menu {
     @extend %fullSpace;
     display: flex;
@@ -90,7 +95,7 @@
   @include textStyles;
 
   @media (max-width: 500px) {
-    font-size: 12px;
+    font-size: 1.5rem;
   }
 }
 
@@ -110,7 +115,7 @@
   }
 
   @media (max-width: 500px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
   }
 }
@@ -119,7 +124,7 @@
   font-family: $font-roboto;
   font-size: 60px;
   font-weight: 300;
-  color: $color-secondary;
+  color: $color-white;
   margin-bottom: 80px;
   text-align: center;
 
@@ -151,6 +156,10 @@
 
   @media (max-width: 1000px) {
     padding-top: 5rem;
+  }
+
+  @media (max-width: 400px){
+    flex-direction: column;
   }
 
   a {
@@ -206,13 +215,6 @@
     height: 3rem;
     font-size: 1rem;
   }
-
-
-  @media (max-width: 500px) {
-    width: 130px;
-    height: 30px;
-    font-size: 10px;
-  }
 }
 
 .card {
@@ -224,6 +226,12 @@
   @media (max-width: 1000px) {
     width: 43%;
     height: 30vw;
+    position: relative;
+    overflow: hidden;
+  }
+  @media (max-width: 500px) {
+    width: 40%;
+    height: 45vw;
     position: relative;
     overflow: hidden;
   }
@@ -325,8 +333,9 @@
     @media (max-width: 1000px) {
       font-size: 3rem;
     }
-
-
+    @media (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
 
   &-subtitle {
@@ -336,6 +345,10 @@
 
     @media (max-width: 1000px) {
       font-size: 1.2rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 1rem;
     }
   }
 }
@@ -359,8 +372,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px solid $color-dark;
     border-bottom: 2px solid $color-dark;
+    border-top: 2px solid $color-dark;
 
     @media (max-width: 1000px) {
       font-size: 3rem;
@@ -371,7 +384,6 @@
 
   &-subtitle {
     font-size: 2rem;
-    margin-bottom: 2rem;
     text-align: center;
   }
 
@@ -384,6 +396,10 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+
+    @media (max-width: 1000px){
+      height: 30%;
+    }
 
   }
 
@@ -405,6 +421,11 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+
+    @media (max-width: 1000px){
+      height: 70%;
+    }
+
     
     a{
       text-decoration: none;
