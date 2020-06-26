@@ -159,6 +159,9 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); } }
+    @media (orientation: landscape) {
+      .header-banner {
+        padding-top: 4rem; } }
 
 .specialty {
   height: 100vh;
@@ -229,11 +232,15 @@ body {
       -webkit-box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
       box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75); }
-      @media (max-width: 1200px) {
+      @media (orientation: landscape) {
+        .specialty-category-image {
+          height: 30vh;
+          width: 30vh; } }
+      @media (max-width: 900px) {
         .specialty-category-image {
           height: 15vh;
           width: 15vh; } }
-      @media (max-width: 1200px) {
+      @media (max-width: 500px) {
         .specialty-category-image {
           height: 10vh;
           width: 10vh; } }
@@ -300,6 +307,10 @@ body {
     .hamburger-menu {
       width: 5rem;
       height: 5rem; } }
+  @media (orientation: landscape) {
+    .hamburger-menu {
+      width: 4rem;
+      height: 4rem; } }
   @media (max-width: 400px) {
     .hamburger-menu {
       width: 3rem;
@@ -376,6 +387,9 @@ body {
   @media (max-width: 500px) {
     .sub-name {
       font-size: 1rem; } }
+  @media (orientation: landscape) {
+    .sub-name {
+      margin: 0; } }
 
 .main-heading {
   font-family: "Montserrat", sans-serif;
@@ -383,6 +397,9 @@ body {
   font-weight: 300;
   color: #fff;
   margin-bottom: 40px; }
+  @media (orientation: landscape) {
+    .main-heading {
+      margin-bottom: 1rem; } }
   @media (max-width: 1600px) {
     .main-heading {
       font-size: 5rem; } }
@@ -428,8 +445,14 @@ body {
     .main-buttons {
       padding-top: 1rem;
       flex-direction: column; } }
+  @media (orientation: landscape) {
+    .main-buttons {
+      padding-top: 0; } }
   .main-buttons a {
     padding: 2rem; }
+    @media (orientation: landscape) {
+      .main-buttons a {
+        padding-top: 1rem; } }
 
 .main-btn {
   width: 17rem;
@@ -485,6 +508,10 @@ body {
     .card {
       width: 40%;
       height: 45vw; } }
+  @media (orientation: landscape) {
+    .card {
+      width: 30%;
+      height: 25vw; } }
   @media (max-width: 400px) {
     .card {
       width: 43%;

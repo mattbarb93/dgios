@@ -13,6 +13,11 @@
     height: 5rem;
   }
 
+  @media (orientation: landscape){
+    width: 4rem;
+    height: 4rem;
+  }
+
   @media (max-width: 400px){
     width: 3rem;
     height: 3rem;
@@ -98,6 +103,9 @@
   @media (max-width: 500px) {
     font-size: 1rem;
   }
+  @media (orientation: landscape){
+    margin: 0;
+  }
 }
 
 .main-heading {
@@ -106,6 +114,10 @@
   font-weight: 300;
   color: $color-white;
   margin-bottom: 40px;
+
+  @media (orientation: landscape){
+    margin-bottom: 1rem;
+  }
 
   @media (max-width: 1600px) {
     font-size: 5rem;
@@ -119,6 +131,8 @@
     font-size: 1.8rem;
     margin-bottom: 20px;
   }
+
+
 }
 
 .sub-heading {
@@ -164,8 +178,16 @@
     flex-direction: column;
   }
 
+  @media (orientation: landscape){
+    padding-top: 0;
+  }
+
   a {
     padding: 2rem;
+
+    @media (orientation: landscape){
+      padding-top: 1rem;
+    }
   }
 }
 
@@ -235,7 +257,10 @@
     width: 40%;
     height: 45vw;
   }
-
+  @media (orientation: landscape) {
+    width: 30%;
+    height: 25vw;
+  }
   @media (max-width: 400px){
     width: 43%;
     height: 30vw;
