@@ -195,6 +195,11 @@ body {
     @media (max-width: 400px) {
       .specialty-title {
         font-size: 2rem; } }
+    @media (orientation: landscape) {
+      .specialty-title {
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        font-size: 2.5rem; } }
   .specialty-subtitle {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -209,6 +214,9 @@ body {
     @media (max-width: 400px) {
       .specialty-subtitle {
         font-size: 1.2rem;
+        margin-bottom: 1rem; } }
+    @media (orientation: landscape) {
+      .specialty-subtitle {
         margin-bottom: 1rem; } }
   .specialty-categories {
     display: flex;
@@ -516,6 +524,10 @@ body {
     .card {
       width: 43%;
       height: 30vw; } }
+  @media (orientation: landscape) {
+    .card {
+      width: 30%;
+      height: 10vw; } }
   .card:hover .card-overlay {
     left: 0; }
   .card-overlay {
@@ -599,6 +611,9 @@ body {
   @media (max-width: 500px) {
     .gallery-title {
       font-size: 2rem; } }
+  @media (orientation: landscape) {
+    .gallery-title {
+      font-size: 2.5rem; } }
 
 .gallery-subtitle {
   font-size: 2rem;
@@ -626,6 +641,10 @@ body {
   @media (max-width: 400px) {
     .contact-title {
       font-size: 2rem; } }
+  @media (orientation: landscape) {
+    .contact-title {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem; } }
 
 .contact-wrapper {
   height: 50%;
@@ -640,6 +659,9 @@ body {
       font-size: 1.8rem;
       flex-direction: column;
       justify-content: space-evenly; } }
+  @media (orientation: landscape) {
+    .contact-wrapper {
+      margin: 1rem 0 0.5rem 0; } }
 
 .contact-subtitle {
   font-size: 2rem;
@@ -666,12 +688,18 @@ body {
   @media (max-width: 400px) {
     .contact-partners {
       height: 20%; } }
+  @media (orientation: landscape) {
+    .contact-partners {
+      height: 20%; } }
 
 .contact img {
   max-width: 150px; }
   @media (max-width: 500px) {
     .contact img {
       max-width: 100px; } }
+  @media (orientation: landscape) {
+    .contact img {
+      max-width: 75px; } }
 
 .footer-title {
   text-align: center; }
@@ -690,6 +718,9 @@ body {
     @media (max-width: 500px) {
       .footer-social-media a {
         font-size: 3rem; } }
+    @media (orientation: landscape) {
+      .footer-social-media a {
+        font-size: 2.5rem; } }
   .footer-social-media-facebook {
     color: #3b5998; }
   .footer-social-media-instagram {
@@ -698,5 +729,8 @@ body {
 .footer-credits {
   text-align: center; }
   @media (max-width: 500px) {
+    .footer-credits {
+      font-size: 1rem; } }
+  @media (orientation: landscape) {
     .footer-credits {
       font-size: 1rem; } }

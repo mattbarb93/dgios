@@ -205,6 +205,12 @@
     @media (max-width: 400px) {
       font-size: 2rem;
     }
+
+    @media (orientation: landscape){
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+      font-size: 2.5rem;
+    }
   }
 
   &-subtitle {
@@ -223,6 +229,10 @@
 
     @media (max-width: 400px) {
       font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (orientation: landscape){
       margin-bottom: 1rem;
     }
   }
