@@ -133,7 +133,7 @@ body {
       font-size: 3rem; } }
   @media (max-width: 1000px) {
     .header {
-      background-image: url(images/cannoli-20.jpg); } }
+      background-image: url(https://mattbarb93.github.io/dgios/images/cannoli-20.jpg); } }
   .header .brand {
     position: absolute;
     top: 15%;
@@ -693,13 +693,19 @@ body {
       height: 20%; } }
 
 .contact img {
-  max-width: 150px; }
+  width: 150px; }
+  @media (orientation: landscape) and (max-width: 1000) {
+    .contact img {
+      width: 75px; } }
+  @media (max-width: 800px) {
+    .contact img {
+      max-width: 100px; } }
   @media (max-width: 500px) {
     .contact img {
       max-width: 100px; } }
   @media (orientation: landscape) {
     .contact img {
-      max-width: 75px; } }
+      width: 75px; } }
 
 .footer-title {
   text-align: center; }
