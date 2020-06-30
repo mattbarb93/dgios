@@ -193,7 +193,6 @@
 
 .deals{
   &-title {
-    margin-bottom: 2rem;
     font-size: 4rem;
     color: $color-secondary;
     height: 5%;
@@ -203,7 +202,6 @@
     }
 
     @media (max-width: 500px) {
-      margin-bottom: 1rem;
       font-size: 2.5rem;
     }
     @media (max-width: 400px) {
@@ -211,15 +209,12 @@
     }
 
     @media (orientation: landscape){
-      margin-bottom: 3rem;
-      margin-top: 1rem;
       font-size: 2.5rem;
     }
   }
 
   &-subtitle {
     font-size: 2rem;
-    margin-bottom: 2rem;
     color: $color-secondary;
     height: 5%;
 
