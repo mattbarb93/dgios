@@ -190,9 +190,9 @@
 }
 
 .deals {
+  color: $color-white;
   &-title {
     font-size: 4rem;
-    color: $color-secondary;
     height: 5%;
 
     @media (max-width: 1200px) {
@@ -213,7 +213,6 @@
 
   &-subtitle {
     font-size: 2rem;
-    color: $color-secondary;
     height: 5%;
 
     @media (max-width: 1200px) {
