@@ -173,6 +173,13 @@
   font-family: $font-montserrat;
   text-align: center;
   padding: 1rem;
+
+  @media (max-width: 1100px) {
+    height: 50vh;
+  }
+  @media (max-width: 500px) {
+    height: 60vh;
+  }
 }
 
 .specialty {

@@ -70,6 +70,10 @@
     filter: drop-shadow(0 0 10px #0003);
     perspective: 100px;
     height: 20vh;
+
+    @media(max-width: 500px){
+      height: 30vh;
+    }
   }
   
   .carousel__viewport {
@@ -190,6 +194,10 @@
     left: 0;
     text-align: center;
     z-index: 1000;
+
+    @media(max-width: 500px) {
+      bottom: -10px;
+    }
   }
   
   .carousel__navigation-list,
