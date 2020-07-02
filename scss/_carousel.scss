@@ -84,6 +84,7 @@
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     font-family: $font-roboto;
+    border-radius: 1rem 1rem 1rem 1rem;
   }
   
   .carousel__slide {
@@ -109,22 +110,19 @@
   }
   
   .deals-slide{
-    background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
     position: relative;
     flex: 0 0 100%;
     width: 100%;
     counter-increment: item;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
-    filter: blur(1px);
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &-1{
-      background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
+      background-image: url(/images/cannoli-20.jpg);
       position: relative;
     flex: 0 0 100%;
     width: 100%;
@@ -132,8 +130,6 @@
     counter-increment: item;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
-    filter: blur(1px);
     z-index: 1;
     display: flex;
     justify-content: center;

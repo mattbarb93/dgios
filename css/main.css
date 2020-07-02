@@ -431,7 +431,9 @@ body {
       flex-direction: column;
       color: #fff;
       opacity: 1;
-      filter: blur(0); }
+      filter: blur(0);
+      box-shadow: 10px 10px 20px -3px rgba(0, 0, 0, 0.75);
+      border-radius: 1rem 1rem 1rem 1rem; }
     .deals-slide-title {
       font-size: 3rem; }
 
@@ -878,7 +880,8 @@ ol, li {
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  border-radius: 1rem 1rem 1rem 1rem; }
 
 .carousel__slide {
   position: relative;
@@ -900,29 +903,24 @@ ol, li {
   font-size: 2em; }
 
 .deals-slide {
-  background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
   position: relative;
   flex: 0 0 100%;
   width: 100%;
   counter-increment: item;
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
-  filter: blur(1px);
   z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center; }
   .deals-slide-1 {
-    background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
+    background-image: url(/images/cannoli-20.jpg);
     position: relative;
     flex: 0 0 100%;
     width: 100%;
     counter-increment: item;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
-    filter: blur(1px);
     z-index: 1;
     display: flex;
     justify-content: center;
