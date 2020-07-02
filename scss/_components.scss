@@ -260,7 +260,7 @@
     }
 
     &-content {
-      
+      background-color: $color-dark;
       width: 50%;
       height: 50%;
       z-index: 10;
@@ -269,6 +269,8 @@
       align-items: center;
       flex-direction: column;
       color: $color-white;
+      opacity: 1;
+      filter: blur(0);
     }
 
     &-title{

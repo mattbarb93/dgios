@@ -421,6 +421,7 @@ body {
       filter: blur(1px);
       z-index: 1; }
     .deals-slide-content {
+      background-color: #262626;
       width: 50%;
       height: 50%;
       z-index: 10;
@@ -428,7 +429,9 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      color: #fff; }
+      color: #fff;
+      opacity: 1;
+      filter: blur(0); }
     .deals-slide-title {
       font-size: 3rem; }
 
@@ -861,19 +864,21 @@ ol, li {
   position: relative;
   padding-top: 30%;
   filter: drop-shadow(0 0 10px #0003);
-  perspective: 100px; }
+  perspective: 100px;
+  height: 20vh; }
 
 .carousel__viewport {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
   display: flex;
   overflow-x: scroll;
   counter-reset: item;
   scroll-behavior: smooth;
-  scroll-snap-type: x mandatory; }
+  scroll-snap-type: x mandatory;
+  font-family: "Roboto", sans-serif; }
 
 .carousel__slide {
   position: relative;
@@ -894,17 +899,34 @@ ol, li {
   color: #fff;
   font-size: 2em; }
 
-.deals-slide-1 {
+.deals-slide {
+  background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
   position: relative;
   flex: 0 0 100%;
   width: 100%;
-  background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
   counter-increment: item;
   background-size: cover;
   background-position: center;
   opacity: 0.5;
   filter: blur(1px);
-  z-index: 1; }
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .deals-slide-1 {
+    background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    filter: blur(1px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .deals-slide-1:nth-child(even) {
   background-color: #99f; }
@@ -947,7 +969,8 @@ ol, li {
   right: 0;
   bottom: 0;
   left: 0;
-  text-align: center; }
+  text-align: center;
+  z-index: 1000; }
 
 .carousel__navigation-list,
 .carousel__navigation-item {
@@ -963,45 +986,3 @@ ol, li {
   border-radius: 50%;
   font-size: 0;
   transition: transform 0.1s; }
-
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-  position: absolute;
-  top: 0;
-  margin-top: 14.5%;
-  width: 4rem;
-  height: 4rem;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  font-size: 0;
-  outline: 0; }
-
-.carousel::before,
-.carousel__prev {
-  left: -1rem; }
-
-.carousel::after,
-.carousel__next {
-  right: -1rem; }
-
-.carousel::before,
-.carousel::after {
-  content: '';
-  z-index: 1;
-  background-color: #333;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  color: #fff;
-  font-size: 2.5rem;
-  line-height: 4rem;
-  text-align: center;
-  pointer-events: none; }
-
-.carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E"); }
-
-.carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E"); }
