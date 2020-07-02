@@ -957,6 +957,18 @@ ol, li {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .deals-slide-2 {
+    background-image: url(/images/easy-pepperoni-pizza-lead-4.jpg);
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .deals-slide-1:nth-child(even) {
   background-color: #99f; }
